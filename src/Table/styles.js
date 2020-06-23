@@ -1,14 +1,19 @@
 import styled, { css } from "styled-components";
 
+export const TableContainer = styled.div `
+	overflow-x: auto;
+`
 export const Table = styled.table `
-margin: 20px auto;
-border-collapse: collapse;
+	margin: 20px auto;
+	border-collapse: collapse;
 `
 export const TableSegment = styled.td `
 	padding: 5px 10px;
 	color: inherit;
 	background-color: inherit;
 	text-align: center;
+	width: fit-content;
+	white-space: nowrap;
 	${props => 
 	props.host && 
 	css `

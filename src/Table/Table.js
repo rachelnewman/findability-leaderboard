@@ -71,47 +71,49 @@ export const Table = () => {
 	return (
 		<div>
 			{tableData.length > 0 &&
-			<Styled.Table>
-				<thead>
-					<Styled.TableHeaderRow>
-						{Object.keys(tableData[0]).map(
-							key => 
-							<Styled.TableSegment>
-								{key}
-							</Styled.TableSegment>)
-						}
-					<Styled.TableSegment>
-								Quizzes played*
-					</Styled.TableSegment>
-					<Styled.TableSegment>
-								Quizzes won
-					</Styled.TableSegment>
-					</Styled.TableHeaderRow>
-
-				</thead>
-				<Styled.TableBody>
-
-					{tableData.slice(1).map(
-						row =>
-						<Styled.TableRow>
-							{Object.keys(row).map((key, index) =>{
-								const isWinner = winnerList[index] === row["Name"]
-								return (<Styled.TableSegment host={row[key]===HOST} NA={row[key]===NA} winner={isWinner}>
-									{isWinner ? `🏆${row[key]}🏆` : row[key]}
+			<Styled.TableContainer>
+				<Styled.Table>
+					<thead>
+						<Styled.TableHeaderRow>
+							{Object.keys(tableData[0]).map(
+								key => 
+								<Styled.TableSegment>
+									{key}
 								</Styled.TableSegment>)
-								}
-								)
 							}
-							<Styled.TableSegment>
-								{Object.keys(row).filter(score => typeof row[score] === 'number' || row[score] === HOST).length}
-							</Styled.TableSegment>
-							<Styled.TableSegment>
-								{winnerList.filter(name => row["Name"] === name).length}
-							</Styled.TableSegment>
-						</Styled.TableRow>)
-					}
-				</Styled.TableBody>
-			</Styled.Table>
+						<Styled.TableSegment>
+									Quizzes played*
+						</Styled.TableSegment>
+						<Styled.TableSegment>
+									Quizzes won
+						</Styled.TableSegment>
+						</Styled.TableHeaderRow>
+
+					</thead>
+					<Styled.TableBody>
+
+						{tableData.slice(1).map(
+							row =>
+							<Styled.TableRow>
+								{Object.keys(row).map((key, index) =>{
+									const isWinner = winnerList[index] === row["Name"]
+									return (<Styled.TableSegment host={row[key]===HOST} NA={row[key]===NA} winner={isWinner}>
+										{isWinner ? `🏆${row[key]}🏆` : row[key]}
+									</Styled.TableSegment>)
+									}
+									)
+								}
+								<Styled.TableSegment>
+									{Object.keys(row).filter(score => typeof row[score] === 'number' || row[score] === HOST).length}
+								</Styled.TableSegment>
+								<Styled.TableSegment>
+									{winnerList.filter(name => row["Name"] === name).length}
+								</Styled.TableSegment>
+							</Styled.TableRow>)
+						}
+					</Styled.TableBody>
+				</Styled.Table>
+			</Styled.TableContainer>
 		}
 					<Styled.WinnerText>
 					🎊🏆 Winning most times: {getChampion(winnerList)} 🏆🎊
