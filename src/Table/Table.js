@@ -4,23 +4,23 @@ import * as Styled from './styles'
 const HOST = "host"
 const NA = "na"
 const data = [["Name","Quiz1","Quiz2","Quiz3","Quiz4","Quiz5","Quiz6","Quiz7","Quiz8","Quiz9","Quiz10","Quiz12","Quiz13", "Quiz14", "Quiz15"],
-["Ben A",NA,10,14.5,13,NA,12,HOST,NA,NA,16,19,NA,NA,NA],
-["Ben M",NA,12,HOST,21,13,20,22.5,NA,21.5,15,NA,NA,NA,NA],
-["Bianca",11,10,12,14,14,17,17,NA,24,13,HOST,NA,7,NA],
-["Chris",13,7,9,HOST,17,NA,17.5,NA,17,12,23,NA,16,NA],
+["Ben A",NA,10,14.5,13,NA,12,HOST,NA,NA,16,19,NA,NA,6],
+["Ben M",NA,12,HOST,21,13,20,22.5,NA,21.5,15,NA,NA,NA,13],
+["Bianca",11,10,12,14,14,17,17,NA,24,13,HOST,NA,7,13],
+["Chris",13,7,9,HOST,17,NA,17.5,NA,17,12,23,NA,16,5],
 ["John",NA,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA],
-["Leigh",NA,10,9,NA,NA,14,17,99,HOST,16,NA,NA,6,NA],
-["Lewis",10,HOST,11,14,15,9,18.5,NA,14,11,26,NA,8,NA],
+["Leigh",NA,10,9,NA,NA,14,17,99,HOST,16,NA,NA,6,11],
+["Lewis",10,HOST,11,14,15,9,18.5,NA,14,11,26,NA,8,7],
 ["Lilly",NA,12,16.5,19,NA,NA,NA,NA,NA,HOST,NA,NA,14,NA],
 ["Manu",11,8,NA,16,12,NA,NA,NA,NA,NA,NA,NA,NA,NA],
 ["Ollie",15,NA,NA,11,NA,10,NA,NA,NA,13,NA,NA,HOST,NA],
-["Rachel",NA,13,13,16,15,HOST,13,NA,17.5,15,21.5,NA,11,NA],
+["Rachel",NA,13,13,16,15,HOST,13,NA,17.5,15,21.5,NA,11,18],
 ["Razvan",NA,NA,NA,NA,NA,NA,16,NA,NA,NA,8,NA,NA,HOST],
-["Richard",NA,NA,NA,NA,NA,NA,NA,NA,14,11,NA,NA,9,NA],
+["Richard",NA,NA,NA,NA,NA,NA,NA,NA,14,11,NA,NA,9,10],
 ["Rosie",HOST,11,10,17,15.5,15,NA,NA,NA,NA,NA,NA,NA,NA],
 ["Sean",8,NA,NA,12,12,15,NA,NA,NA,NA,NA,NA,NA,NA],
 ["Steve",8,6,11,11,5,7,17,HOST,NA,NA,12,NA,NA,NA],
-["Thomas",8.5,7,9,NA,NA,13,NA,NA,12.5,NA,NA,HOST,12,NA],
+["Thomas",8.5,7,9,NA,NA,13,NA,NA,12.5,NA,NA,HOST,12,11],
 ["Vicent",11,12,17.5,20,HOST,15,23,NA,18.5,19,36,99,16,NA]
 ]
 export const Table = () => {
