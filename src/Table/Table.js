@@ -3,7 +3,7 @@ import * as Styled from './styles'
 
 const HOST = "host"
 const NA = "na"
-const data = [["Name","Quiz1","Quiz2","Quiz3","Quiz4","Quiz5","Quiz6","Quiz7","Quiz8","Quiz9","Quiz10","Quiz12","Quiz13", "Quiz14", "Quiz15"],
+const data = [["Name","Quiz1","Quiz2","Quiz3","Quiz4","Quiz5","Quiz6","Quiz7","Quiz8","Quiz9","Quiz10","Quiz12","Quiz13", "Quiz14", "Quiz15", "Quiz16"],
 ["Ben A",NA,10,14.5,13,NA,12,HOST,NA,NA,16,19,NA,NA,6, NA],
 ["Ben M",NA,12,HOST,21,13,20,22.5,NA,21.5,15,NA,NA,NA,13, NA],
 ["Bianca",11,10,12,14,14,17,17,NA,24,13,HOST,NA,7,13, NA],
@@ -23,6 +23,7 @@ const data = [["Name","Quiz1","Quiz2","Quiz3","Quiz4","Quiz5","Quiz6","Quiz7","Q
 ["Thomas",8.5,7,9,NA,NA,13,NA,NA,12.5,NA,NA,HOST,12,11, NA],
 ["Vicent",11,12,17.5,20,HOST,15,23,NA,18.5,19,36,99,16,NA, 12]
 ]
+const next= "Lilly"
 export const Table = () => {
  const [tableData, setTableData] = useState([])
  const [winnerList, setWinners] = useState([])
@@ -115,8 +116,11 @@ export const Table = () => {
 				</Styled.Table>
 			</Styled.TableContainer>
 		}
-					<Styled.WinnerText>
+				<Styled.WinnerText>
 					🎊🏆 Winning most times: {getChampion(winnerList)} 🏆🎊
+			</Styled.WinnerText>
+			<Styled.WinnerText>
+			 🎙️Next Quiz host: {next} 🎤
 			</Styled.WinnerText>
 
 			<small>
