@@ -23,7 +23,7 @@ const data = [["Name","Quiz1","Quiz2","Quiz3","Quiz4","Quiz5","Quiz6","Quiz7","Q
 ["Thomas",8.5,7,9,NA,NA,13,NA,NA,12.5,NA,NA,HOST,12,11, NA],
 ["Vicent",11,12,17.5,20,HOST,15,23,NA,18.5,19,36,99,16,NA, 12]
 ]
-const next= "Lilly"
+const next= "Richard"
 export const Table = () => {
  const [tableData, setTableData] = useState([])
  const [winnerList, setWinners] = useState([])
