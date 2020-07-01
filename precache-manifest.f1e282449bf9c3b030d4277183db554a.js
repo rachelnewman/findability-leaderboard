@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "51820f5eadc8bfecbab059f06c4135fa",
+    "revision": "70a31ce9574d16ee5b280ab06a2c23ca",
     "url": "/findability-leaderboard/index.html"
   },
   {
-    "revision": "d4dcc3f49bcf0222c43c",
+    "revision": "dbf7d18a8a5d7a8be900",
     "url": "/findability-leaderboard/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/findability-leaderboard/static/js/2.565c5ec8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d4dcc3f49bcf0222c43c",
-    "url": "/findability-leaderboard/static/js/main.c52ed233.chunk.js"
+    "revision": "dbf7d18a8a5d7a8be900",
+    "url": "/findability-leaderboard/static/js/main.e6b2f11f.chunk.js"
   },
   {
     "revision": "4ee4ce7845428ca72daa",
