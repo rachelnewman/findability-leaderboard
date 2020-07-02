@@ -29,7 +29,7 @@ export const Table = () => {
  const [winnerList, setWinners] = useState([])
  const getWinners = () => {
 	const winners = data[0].map((quiz, index) => {
-		if (index === 0) return
+		if (index === 0) return null
 		let winner
 		let score = 0
 		for (const person of data.slice(1)) {
@@ -68,7 +68,13 @@ export const Table = () => {
 		)
 	return champion 
 	}
-
+	const WinnerComponent = ({name}) => {
+		return (<>
+		<span role="img" aria-label="quiz-winner">🏆</span>
+			{name}
+		<span role="img" aria-hidden="true">🏆</span>
+		</>)
+}
 	return (
 		<div>
 			{tableData.length > 0 &&
@@ -99,7 +105,7 @@ export const Table = () => {
 								{Object.keys(row).map((key, index) =>{
 									const isWinner = winnerList[index] === row["Name"]
 									return (<Styled.TableSegment host={row[key]===HOST} NA={row[key]===NA} winner={isWinner}>
-										{isWinner ? `🏆${row[key]}🏆` : row[key]}
+										{isWinner ? <WinnerComponent name={row[key]} /> : row[key]}
 									</Styled.TableSegment>)
 									}
 									)
@@ -116,17 +122,21 @@ export const Table = () => {
 				</Styled.Table>
 			</Styled.TableContainer>
 		}
-				<Styled.WinnerText>
-					🎊🏆 Winning most times: {getChampion(winnerList)} 🏆🎊
-			</Styled.WinnerText>
-			<Styled.WinnerText>
-			 🎙️Next Quiz host: {next} 🎤
-			</Styled.WinnerText>
+		<Styled.WinnerText>
+			<span role="img" aria-hidden="true">🎊🏆</span>
+				Winning most times: {getChampion(winnerList)}
+			<span role="img" aria-hidden="true">🎊🏆</span>
+		</Styled.WinnerText>
+		<Styled.WinnerText>
+		<span role="img" aria-hidden="true">🎙️</span>
+			Next Quiz host: {next} 
+		<span role="img" aria-hidden="true">🎤</span>
+		</Styled.WinnerText>
 
-			<small>
-				* Quizzes played only includes those that I have full result sets for. I am missing at least one (Quiz8)
-			</small>
-			</div>
+		<small>
+			* Quizzes played only includes those that I have full result sets for. I am missing at least one (Quiz8)
+		</small>
+		</div>
 
 
 	)
