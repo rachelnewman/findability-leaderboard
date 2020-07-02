@@ -15,7 +15,7 @@ jobs:
     steps:
     # Checks-out repository under so the job can access it
     - uses: actions/checkout@v2
-    - name: Gitbook Action
-      uses: zanderzhao/gitbook-action@v1.2.2
+    - name: Publish
+      uses: tuliren/publish-gitbook@v1.0.0
       with:
         token: ${{ secrets.PERSONAL_TOKEN }}
