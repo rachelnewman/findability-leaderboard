@@ -16,6 +16,11 @@ jobs:
     # Checks-out repository under so the job can access it
     - uses: actions/checkout@v2
     - name: Publish
-      uses: tuliren/publish-gitbook@v1.0.0
-      with:
-        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+    - name: Install Packages
+      run: yarn install
+    - name: Deploy to GH Pages
+      run: |
+        git config --global user.email "rachel.newman@argos.co.uk"
+        git config --global user.name "rachelnewman"
+        git remote set-url origin https://${{ secrets.PERSONAL_TOKEN }}@github.com/rachelnewman/findability-leaderboard.git
+        yarn deploy
