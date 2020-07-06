@@ -15,7 +15,6 @@ jobs:
     steps:
     # Checks-out repository under so the job can access it
     - uses: actions/checkout@v2
-    - name: Publish
     - name: Install Packages
       run: yarn install
     - name: Deploy to GH Pages
