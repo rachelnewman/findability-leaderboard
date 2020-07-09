@@ -27,6 +27,7 @@ const next= "Vicent"
 export const Table = () => {
  const [tableData, setTableData] = useState([])
  const [winnerList, setWinners] = useState([])
+ const [loserList, setLosers] = useState([])
  const getWinners = () => {
 	const winners = data[0].map((quiz, index) => {
 		if (index === 0) return null
@@ -42,6 +43,21 @@ export const Table = () => {
 	})
 	return winners
  }
+ const getLosers = () => {
+	const losers = data[0].map((quiz, index) => {
+		if (index === 0) return null
+		let loser
+		let score = 100
+		for (const person of data.slice(1)) {
+			if (typeof person[index] === "number" && person[index] < score){
+				loser = person[0]
+				score = person[index]
+			}
+		}
+		return loser
+	})
+	return losers
+ }
 
  useEffect(() => {
 		let dataArray = []
@@ -53,6 +69,7 @@ export const Table = () => {
 )
 		setTableData(dataArray)
 		setWinners(getWinners())
+		setLosers(getLosers())
 		}, []
  ) 	
 	const getChampion = (winners) => { 
@@ -68,11 +85,11 @@ export const Table = () => {
 		)
 	return champion 
 	}
-	const WinnerComponent = ({name}) => {
+	const WinnerComponent = ({name, winner = true}) => {
 		return (<>
-		<span role="img" aria-label="quiz-winner">🏆</span>
+		<span role="img" aria-label="quiz-winner">{winner ? '🏆' : '💩'}</span>
 			{name}
-		<span role="img" aria-hidden="true">🏆</span>
+		<span role="img" aria-hidden="true">{winner ? '🏆' : '💩'}</span>
 		</>)
 }
 	return (
@@ -104,8 +121,9 @@ export const Table = () => {
 							<Styled.TableRow>
 								{Object.keys(row).map((key, index) =>{
 									const isWinner = winnerList[index] === row["Name"]
+									const isLoser = loserList[index] === row["Name"]
 									return (<Styled.TableSegment host={row[key]===HOST} NA={row[key]===NA} winner={isWinner}>
-										{isWinner ? <WinnerComponent name={row[key]} /> : row[key]}
+										{isWinner || isLoser ? <WinnerComponent name={row[key]} winner={isWinner} /> : row[key]}
 									</Styled.TableSegment>)
 									}
 									)
@@ -133,6 +151,11 @@ export const Table = () => {
 		<span role="img" aria-hidden="true">🎤</span>
 		</Styled.WinnerText>
 
+		<Styled.WinnerText>
+			<span role="img" aria-hidden="true">💩</span>
+				Losing most times: {getChampion(loserList)}
+			<span role="img" aria-hidden="true">💩</span>
+		</Styled.WinnerText>
 		<small>
 			* Quizzes played only includes those that I have full result sets for. I am missing at least one (Quiz8)
 		</small>
