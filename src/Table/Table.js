@@ -3,27 +3,27 @@ import * as Styled from './styles'
 
 const HOST = "host"
 const NA = "na"
-const data = [["Name","Quiz1","Quiz2","Quiz3","Quiz4","Quiz5","Quiz6","Quiz7","Quiz8","Quiz9","Quiz10","Quiz12","Quiz13", "Quiz14", "Quiz15", "Quiz16"],
-["Ben A",NA,10,14.5,13,NA,12,HOST,NA,NA,16,19,NA,NA,6, NA],
-["Ben M",NA,12,HOST,21,13,20,22.5,NA,21.5,15,NA,NA,NA,13, NA],
-["Bianca",11,10,12,14,14,17,17,NA,24,13,HOST,NA,7,13, NA],
-["Chris",13,7,9,HOST,17,NA,17.5,NA,17,12,23,NA,16,5, 12],
-["John",NA,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA, NA],
-["Leigh",NA,10,9,NA,NA,14,17,99,HOST,16,NA,NA,6,11, NA],
-["Lewis",10,HOST,11,14,15,9,18.5,NA,14,11,26,NA,8,7,4],
-["Lilly",NA,12,16.5,19,NA,NA,NA,NA,NA,HOST,NA,NA,14,NA,16],
-["Manu",11,8,NA,16,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA],
-["Ollie",15,NA,NA,11,NA,10,NA,NA,NA,13,NA,NA,HOST,NA,5],
-["Rachel",NA,13,13,16,15,HOST,13,NA,17.5,15,21.5,NA,11,18, HOST],
-["Razvan",NA,NA,NA,NA,NA,NA,16,NA,NA,NA,8,NA,NA,HOST,3],
-["Richard",NA,NA,NA,NA,NA,NA,NA,NA,14,11,NA,NA,9,10, 8],
-["Rosie",HOST,11,10,17,15.5,15,NA,NA,NA,NA,NA,NA,NA,NA, NA],
-["Sean",8,NA,NA,12,12,15,NA,NA,NA,NA,NA,NA,NA,NA, 9],
-["Steve",8,6,11,11,5,7,17,HOST,NA,NA,12,NA,NA,NA, NA],
-["Thomas",8.5,7,9,NA,NA,13,NA,NA,12.5,NA,NA,HOST,12,11, NA],
-["Vicent",11,12,17.5,20,HOST,15,23,NA,18.5,19,36,99,16,NA, 12]
+const data = [["Name","Quiz1","Quiz2","Quiz3","Quiz4","Quiz5","Quiz6","Quiz7","Quiz8","Quiz9","Quiz10","Quiz12","Quiz13", "Quiz14", "Quiz15", "Quiz16", "Quiz17"],
+["Ben A",NA,10,14.5,13,NA,12,HOST,NA,NA,16,19,NA,NA,6, NA, 23],
+["Ben M",NA,12,HOST,21,13,20,22.5,NA,21.5,15,NA,NA,NA,13, NA, 25],
+["Bianca",11,10,12,14,14,17,17,NA,24,13,HOST,NA,7,13, NA, NA],
+["Chris",13,7,9,HOST,17,NA,17.5,NA,17,12,23,NA,16,5, 12, 23.5],
+["John",NA,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA, NA, NA],
+["Leigh",NA,10,9,NA,NA,14,17,99,HOST,16,NA,NA,6,11, NA, NA],
+["Lewis",10,HOST,11,14,15,9,18.5,NA,14,11,26,NA,8,7,4, 16],
+["Lilly",NA,12,16.5,19,NA,NA,NA,NA,NA,HOST,NA,NA,14,NA,16, NA],
+["Manu",11,8,NA,16,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA, NA],
+["Ollie",15,NA,NA,11,NA,10,NA,NA,NA,13,NA,NA,HOST,NA,5, 25.5],
+["Rachel",NA,13,13,16,15,HOST,13,NA,17.5,15,21.5,NA,11,18, HOST, 26.5],
+["Razvan",NA,NA,NA,NA,NA,NA,16,NA,NA,NA,8,NA,NA,HOST,3, 18],
+["Richard",NA,NA,NA,NA,NA,NA,NA,NA,14,11,NA,NA,9,10, 8, HOST],
+["Rosie",HOST,11,10,17,15.5,15,NA,NA,NA,NA,NA,NA,NA,NA, NA, NA],
+["Sean",8,NA,NA,12,12,15,NA,NA,NA,NA,NA,NA,NA,NA, 9, NA],
+["Steve",8,6,11,11,5,7,17,HOST,NA,NA,12,NA,NA,NA, NA, 16.5],
+["Thomas",8.5,7,9,NA,NA,13,NA,NA,12.5,NA,NA,HOST,12,11, NA, 17],
+["Vicent",11,12,17.5,20,HOST,15,23,NA,18.5,19,36,99,16,NA, 12, 28.5]
 ]
-const next= "Richard"
+const next= "Vicent"
 export const Table = () => {
  const [tableData, setTableData] = useState([])
  const [winnerList, setWinners] = useState([])
