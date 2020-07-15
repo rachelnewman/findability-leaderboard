@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/findability-leaderboard/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/findability-leaderboard/static/js/main.6601ce0f.chunk.js",
-    "main.js.map": "/findability-leaderboard/static/js/main.6601ce0f.chunk.js.map",
+    "main.js": "/findability-leaderboard/static/js/main.29730576.chunk.js",
+    "main.js.map": "/findability-leaderboard/static/js/main.29730576.chunk.js.map",
     "runtime-main.js": "/findability-leaderboard/static/js/runtime-main.a8f94f87.js",
     "runtime-main.js.map": "/findability-leaderboard/static/js/runtime-main.a8f94f87.js.map",
     "static/js/2.db4279c4.chunk.js": "/findability-leaderboard/static/js/2.db4279c4.chunk.js",
     "static/js/2.db4279c4.chunk.js.map": "/findability-leaderboard/static/js/2.db4279c4.chunk.js.map",
     "index.html": "/findability-leaderboard/index.html",
-    "precache-manifest.eabf2dd9f08d920aab1da0d768e393cc.js": "/findability-leaderboard/precache-manifest.eabf2dd9f08d920aab1da0d768e393cc.js",
+    "precache-manifest.95c52d11e8bd29e7f29754b5c8002e28.js": "/findability-leaderboard/precache-manifest.95c52d11e8bd29e7f29754b5c8002e28.js",
     "service-worker.js": "/findability-leaderboard/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/findability-leaderboard/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.db4279c4.chunk.js.LICENSE.txt": "/findability-leaderboard/static/js/2.db4279c4.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a8f94f87.js",
     "static/js/2.db4279c4.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.6601ce0f.chunk.js"
+    "static/js/main.29730576.chunk.js"
   ]
 }
