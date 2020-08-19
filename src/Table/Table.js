@@ -23,12 +23,7 @@ const data = [["Name","Quiz1","Quiz2","Quiz3","Quiz4","Quiz5","Quiz6","Quiz7","Q
 ["Thomas",8.5,7,9,NA,NA,13,NA,NA,12.5,NA,NA,HOST,12,11, NA, 17, NA, 11, NA, NA],
 ["Vicent",11,12,17.5,20,HOST,15,23,NA,18.5,19,36,99,16,NA, 12, 28.5, HOST, 15, HOST, 19]
 ]
-Chris	3	6	10	19
-Lewis	3	6	10	19
-Lilly	4	6	10	20
-Rachel	5	6	6	17
-Richard	2	5	9	16
-Vicent	5	4	10	19
+
 const next= "Lilly"
 export const Table = () => {
  const [tableData, setTableData] = useState([])
