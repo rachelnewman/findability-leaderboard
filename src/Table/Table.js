@@ -27,6 +27,7 @@ const data = [
     "Quiz20",
     "Quiz21",
     "Quiz22",
+    "Quiz23",
   ],
   [
     "Ben A",
@@ -49,6 +50,7 @@ const data = [
     30,
     NA,
     22,
+    NA,
     NA,
     NA,
   ],
@@ -75,6 +77,7 @@ const data = [
     27,
     HOST,
     15.5,
+    28,
   ],
   [
     "Bianca",
@@ -92,6 +95,7 @@ const data = [
     NA,
     7,
     13,
+    NA,
     NA,
     NA,
     NA,
@@ -123,11 +127,13 @@ const data = [
     17,
     19,
     22,
+    17,
   ],
   [
     "John",
     NA,
     9,
+    NA,
     NA,
     NA,
     NA,
@@ -171,6 +177,7 @@ const data = [
     22,
     NA,
     17,
+    17.5,
   ],
   [
     "Lewis",
@@ -195,6 +202,7 @@ const data = [
     NA,
     19,
     15.5,
+    NA,
   ],
   [
     "Lilly",
@@ -219,6 +227,7 @@ const data = [
     NA,
     20,
     HOST,
+    25,
   ],
   [
     "Manu",
@@ -227,6 +236,7 @@ const data = [
     NA,
     16,
     12,
+    NA,
     NA,
     NA,
     NA,
@@ -267,6 +277,7 @@ const data = [
     NA,
     NA,
     NA,
+    NA,
   ],
   [
     "Rachel",
@@ -291,6 +302,7 @@ const data = [
     22,
     17,
     9.5,
+    13,
   ],
   [
     "Razvan",
@@ -313,6 +325,7 @@ const data = [
     16.5,
     10,
     15.5,
+    NA,
     NA,
     NA,
   ],
@@ -339,6 +352,7 @@ const data = [
     NA,
     16,
     NA,
+    14,
   ],
   [
     "Rosie",
@@ -348,6 +362,7 @@ const data = [
     17,
     15.5,
     15,
+    NA,
     NA,
     NA,
     NA,
@@ -387,6 +402,32 @@ const data = [
     NA,
     NA,
     NA,
+    13,
+  ],
+  [
+    "Simon",
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    NA,
+    26,
   ],
   [
     "Steve",
@@ -406,6 +447,7 @@ const data = [
     NA,
     NA,
     16.5,
+    NA,
     NA,
     NA,
     NA,
@@ -435,6 +477,7 @@ const data = [
     NA,
     NA,
     16,
+    NA,
   ],
   [
     "Vicent",
@@ -459,10 +502,11 @@ const data = [
     HOST,
     19,
     26,
+    HOST,
   ],
 ];
 
-const next = "Vicent";
+const next = "Ben M";
 export const Table = () => {
   const [tableData, setTableData] = useState([]);
   const [winnerList, setWinners] = useState([]);
