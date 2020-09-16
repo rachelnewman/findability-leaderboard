@@ -462,7 +462,7 @@ const data = [
   ],
 ];
 
-const next = "Lilly";
+const next = "Vicent";
 export const Table = () => {
   const [tableData, setTableData] = useState([]);
   const [winnerList, setWinners] = useState([]);
