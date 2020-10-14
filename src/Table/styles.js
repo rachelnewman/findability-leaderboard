@@ -27,6 +27,22 @@ export const TableSegment = styled.td `
 		css `
 		opacity: 0.5;
 		`}
+		${props => 
+		props.stickyRight && 
+		css `
+		position: sticky;
+		right:0;
+		box-shadow: inset 7px 0 20px 0  #aaaaaa;
+
+		`}
+		${props => 
+		props.stickyLeft && 
+		css `
+		position: sticky;
+		left:0;
+		box-shadow: inset -7px 0 20px 0  #aaaaaa;
+
+		`}
 
 `
 export const TableHeaderRow = styled.tr `
