@@ -689,7 +689,7 @@ const data = [
   ],
 ];
 
-const next = "Sabrina";
+const next = "🎄 CHRISTMAS TEAM COLLAB! 🎄";
 export const Table = () => {
   const [tableData, setTableData] = useState([]);
   const [winnerList, setWinners] = useState([]);
